@@ -59,7 +59,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 40px;
 }
 .upper-img {
   width: 350px;
@@ -69,7 +69,7 @@ header {
 .upper-header {
   display: flex;
   justify-content: space-between;
-  height: 20vh;
+  height: 10vh;
   background-color: transparent;
   color: white;
 }
@@ -152,6 +152,14 @@ header {
   height: 250px;
   object-fit: contain;
 }
+.section-aboutme__imgs:nth-child(2) img {
+  width: 300px;
+  background-color: #6688cc;
+  padding: 30px 30px;
+  border-radius: 24px;
+  height: 300px;
+  object-fit: contain;
+}
 .section-skills {
   background-image: url("../Materail/img1.PNG");
   background-position: center;
@@ -175,17 +183,21 @@ header {
   grid-template-rows: 1fr; /* Ensures there's only one row */
   height: 100%;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 0px;
   gap: 20px; /* Optional: Adds space between the columns */
 }
 .section-skills__first > div {
   text-align: center;
 }
-.section-skills__first > div:nth-child(3) > img {
+.section-skills__first > div > img {
   background-color: white;
   padding: 10px;
   border-radius: 24px;
   margin-bottom: 40px;
+}
+.section-skills__first > div:nth-child(3) >img {
+  text-align: center;
+margin: 70px 0;
 }
 
 .services-list {
@@ -202,7 +214,7 @@ header {
 }
 .services-list > div > img {
   width: 400px;
-  border-radius: 50%;
+  border-radius: 24px;
   height: 400px;
 }
 .services-list > div > p {
